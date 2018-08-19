@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    {% for i in name %}
+        <h3
+            {% if forloop.first %}
+                style="color: blue;"
+            {% endif %}
+            {% if forloop.first %}
+                style="color: red;"
+            {% endif %}
+        >
+        {{ forloop.counter0 }}:{{ i|add:'y' }}<br>
+        </h3>
+    {% endfor %}
+</body>
+</html>
